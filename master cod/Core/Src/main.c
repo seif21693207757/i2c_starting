@@ -133,7 +133,7 @@ int main(void)
 
       HAL_I2C_Master_Receive(&hi2c1, i2c_address << 1, &received_data, 1, HAL_MAX_DELAY);
 
-	  HAL_Delay(3000);
+	  HAL_Delay(4000);
 	  data_to_send = received_data;
   }
   /* USER CODE END 3 */
