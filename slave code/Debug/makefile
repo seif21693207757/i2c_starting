@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := wb_code_i2c
+BUILD_ARTIFACT_NAME := slave code
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-wb_code_i2c.elf \
+slave\ code.elf \
 
 MAP_FILES += \
-wb_code_i2c.map \
+slave\ code.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-wb_code_i2c.list \
+slave\ code.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: wb_code_i2c.elf secondary-outputs
+main-build: slave\ code.elf secondary-outputs
 
 # Tool invocations
-wb_code_i2c.elf wb_code_i2c.map: $(OBJS) $(USER_OBJS) C:\Users\seljery.ACTIA\Desktop\code\ stm32\wb_code_i2c\STM32WB55RGVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "wb_code_i2c.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\wb_code_i2c\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="wb_code_i2c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+slave\ code.elf slave\ code.map: $(OBJS) $(USER_OBJS) C:\Users\seljery.ACTIA\Desktop\code\ stm32\EX_I2C\slave\ code\STM32WB55RGVX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "slave code.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-wb_code_i2c.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "wb_code_i2c.list"
+slave\ code.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "slave code.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout wb_code_i2c.elf wb_code_i2c.list wb_code_i2c.map
+	-$(RM) default.size.stdout slave\ code.elf slave\ code.list slave\ code.map slave\\ code.elf
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

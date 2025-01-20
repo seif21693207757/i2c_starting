@@ -1,0 +1,1462 @@
+!SESSION 2025-01-20 12:37:52.250 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-20 12:38:24.930
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-20 12:38:24.939
+!MESSAGE Log4j2 initialized with config file C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-20 12:38:30.084
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2025-01-20 12:39:02.531
+!MESSAGE Exception trying to parse option [#include <D:\stmMX\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../arm-none-eabi/include/newlib-nano>], class CrossBuiltinSpecsDetector
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.getFilesystemLocation(AbstractLanguageSettingsOutputScanner.java:1161)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.resolvePathEntryInFilesystem(AbstractLanguageSettingsOutputScanner.java:1256)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.createResolvedPathEntry(AbstractLanguageSettingsOutputScanner.java:1197)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.processLine(AbstractLanguageSettingsOutputScanner.java:606)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$ConsoleParserAdapter.processLine(AbstractBuiltinSpecsDetector.java:259)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:180)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:101)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:60)
+	at java.base/java.io.OutputStream.write(OutputStream.java:124)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:60)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2025-01-20 12:39:02.542
+!MESSAGE Exception trying to parse option [#include <D:\stmMX\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include>], class CrossBuiltinSpecsDetector
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.getFilesystemLocation(AbstractLanguageSettingsOutputScanner.java:1161)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.resolvePathEntryInFilesystem(AbstractLanguageSettingsOutputScanner.java:1256)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.createResolvedPathEntry(AbstractLanguageSettingsOutputScanner.java:1197)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractLanguageSettingsOutputScanner.processLine(AbstractLanguageSettingsOutputScanner.java:606)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$ConsoleParserAdapter.processLine(AbstractBuiltinSpecsDetector.java:259)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:180)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:101)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:60)
+	at java.base/java.io.OutputStream.write(OutputStream.java:124)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2025-01-20 12:39:14.063
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2025-01-20 12:39:14.079
+!MESSAGE Exception in Decorator. The 'linkerDecorator' decorator will be disabled.
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-01-20 12:39:14.079
+!MESSAGE Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.managedbuilder.core.IManagedBuildInfo.getDefaultConfiguration()" because "buildInfo" is null
+	at com.st.stm32cube.ide.mcu.build.ui.decorator.BoldDecorator.decorate(BoldDecorator.java:79)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:39:14.452
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:39:14.453
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:39:14.453
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:39:14.464
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-20 12:39:17.517
+!MESSAGE Indexed 'master cod' (26 sources, 121 headers) in 6.46 sec: 11,899 declarations; 58,103 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.24%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-20 12:39:23.726
+!MESSAGE Indexed 'slave code' (27 sources, 121 headers) in 6.01 sec: 12,671 declarations; 61,334 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.23%)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:43:39.449
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:43:39.449
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:43:39.449
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:43:39.458
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:43:40.781
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:43:40.781
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:43:40.781
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:43:40.789
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:43:50.577
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:43:50.577
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:44:07.812
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:44:07.812
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:44:07.812
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:44:07.819
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:44:07.953
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:44:07.953
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:44:07.953
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:44:07.962
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:44:08.762
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:44:08.762
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:44:16.183
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:44:16.183
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:44:16.183
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:44:16.192
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:44:20.543
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:44:20.543
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:44:20.543
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:44:20.550
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:44:55.635
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:44:55.635
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:44:55.635
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:44:55.644
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:44:55.751
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:44:55.751
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:44:55.751
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:44:55.757
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:45:54.823
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:45:54.823
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:45:54.823
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:45:54.832
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:45:54.926
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:45:54.926
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:45:54.926
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:45:54.933
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:45:55.800
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:45:55.800
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:46:10.097
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:46:10.097
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:46:10.098
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:46:10.103
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:46:10.200
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:46:10.200
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:46:10.200
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:46:10.207
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:46:11.103
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:46:11.104
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:46:29.977
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:46:29.977
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:46:29.977
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:46:29.981
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:46:31.581
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:46:31.581
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:46:31.581
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:46:31.589
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:46:54.591
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:46:54.591
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:46:54.591
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:46:54.596
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:46:54.678
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:46:54.678
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:46:54.678
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:46:54.684
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:46:55.477
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:46:55.477
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:47:47.871
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:47:47.871
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:47:47.871
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:47:47.875
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:47:47.960
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:47:47.960
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:47:47.960
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:47:47.965
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:47:48.675
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:47:48.675
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:47:51.114
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:47:51.114
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:47:51.114
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:47:51.118
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:47:51.194
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:47:51.194
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:47:51.194
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:47:51.200
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:47:52.043
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:47:52.044
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:16.016
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:16.016
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:16.016
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:16.022
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:16.100
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:16.100
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:16.100
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:16.106
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:48:16.901
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:48:16.902
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:19.588
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:19.588
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:19.588
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:19.595
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:27.355
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:27.355
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:27.355
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:27.360
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:31.834
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:31.834
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:31.834
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:31.841
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:35.022
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:35.022
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:35.022
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:35.028
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:48:35.125
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:48:35.125
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:48:35.125
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:48:35.131
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:48:35.886
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:48:35.886
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.help.base 2 0 2025-01-20 12:49:09.675
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.cdt.doc.user_11.4.0.202309142347 [184]'. The index should be rebuilt with Lucene 9.8.0
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-01-20 12:49:41.098
+!MESSAGE Failed to convert number: 
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:672)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebuggerTab.getInteger(DebuggerTab.java:515)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebuggerTab.performApply(DebuggerTab.java:627)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.refresh(LaunchConfigurationTabGroupViewer.java:528)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1650)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:155)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebuggerTab.updateLaunchConfigurationDialog(DebuggerTab.java:338)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebuggerTab$6.modifyText(DebuggerTab.java:559)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:183)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Text.wmCommandChild(Text.java:3106)
+	at org.eclipse.swt.widgets.Control.WM_COMMAND(Control.java:4895)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4747)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Text.callWindowProc(Text.java:295)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2687)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1240)
+	at org.eclipse.debug.ui.DebugUITools.lambda$1(DebugUITools.java:630)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:636)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:574)
+	at org.eclipse.debug.ui.actions.OpenLaunchDialogAction.run(OpenLaunchDialogAction.java:85)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:49:45.448
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:49:45.449
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:49:45.449
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:49:45.455
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:49:49.415
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:49:49.415
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:49:49.415
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:49:49.421
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:49:49.514
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:49:49.514
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:49:49.514
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:49:49.520
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:49:50.345
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:49:50.345
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:50:08.166
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:50:08.166
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:50:08.166
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:50:08.173
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:50:54.424
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:50:54.424
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:50:54.424
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:50:54.428
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:50:54.506
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:50:54.506
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:50:54.506
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:50:54.511
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:50:55.187
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:50:55.187
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:51:14.823
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:51:14.823
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:51:14.823
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:51:14.828
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:51:14.915
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:51:14.915
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:51:14.915
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:51:14.920
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:51:15.586
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:51:15.586
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:51:35.342
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:51:35.342
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:51:35.342
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:51:35.348
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:51:35.426
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:51:35.426
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:51:35.426
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:51:35.433
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:51:36.264
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:51:36.264
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:52:12.329
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:52:12.329
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:52:12.329
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:52:12.336
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:53:16.469
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:53:16.469
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:53:16.469
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:53:16.474
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:53:16.554
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:53:16.554
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:53:16.554
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:53:16.560
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:53:17.518
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:53:17.518
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:54:57.153
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:54:57.153
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:54:57.153
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:54:57.160
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:55:18.247
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:55:18.247
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:55:18.247
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:55:18.256
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:55:18.351
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:55:18.351
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:55:18.351
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:55:18.355
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:55:34.162
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:55:34.162
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:55:34.162
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:55:34.167
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:55:34.355
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:55:34.355
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:55:34.355
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:55:34.362
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:55:35.319
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:55:35.319
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:55:55.385
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:55:55.385
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:55:55.385
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:55:55.392
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:56:01.767
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:56:01.767
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:56:01.767
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:56:01.773
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:56:05.703
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:56:05.703
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:56:05.703
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:56:05.709
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:56:07.249
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:56:07.249
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:56:07.249
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:56:07.256
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:56:58.258
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:56:58.258
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:56:58.258
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:56:58.264
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:56:58.344
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:56:58.344
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:56:58.344
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:56:58.351
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:56:59.188
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-01-20 12:56:59.188
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\Debug\wb_code_i2c.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:57:41.545
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:57:41.545
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:57:41.545
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:57:41.551
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:57:41.642
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:57:41.642
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:57:41.642
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:57:41.648
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:58:13.691
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:58:13.691
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:58:13.691
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:58:13.698
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:58:26.523
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:58:26.523
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:58:26.523
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:58:26.529
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:59:12.403
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:59:12.403
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:59:12.403
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:59:12.408
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:59:12.503
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:59:12.503
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:59:12.503
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:59:12.508
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:59:42.776
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:59:42.776
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:59:42.776
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:59:42.783
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 12:59:42.863
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 12:59:42.863
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 12:59:42.863
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 12:59:42.869
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:01:40.469
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:01:40.469
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:01:40.469
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:01:40.473
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:01:40.587
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:01:40.587
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:01:40.587
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:01:40.590
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-01-20 14:01:49.904
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-01-20 14:01:49.905
+!MESSAGE Setup exceptions
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:05:43.948
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:05:43.948
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:05:43.948
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:05:43.953
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:05:44.104
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:05:44.104
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:05:44.104
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:05:44.110
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2025-01-20 14:06:00.189
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:06:03.035
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:06:03.035
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:06:03.035
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:06:03.041
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:06:03.123
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:06:03.123
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:06:03.123
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:06:03.130
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:06:26.967
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:06:26.967
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:06:26.967
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:06:26.977
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:06:27.217
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:06:27.217
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:06:27.217
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code overlaps the location of another project: 'slave code'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:06:27.225
+!MESSAGE Project is null
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2025-01-20 14:06:31.243
+!MESSAGE ST-LINK GDB server failed to start (exit code = 0)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-01-20 14:06:31.280
+!MESSAGE Error in final launch sequence:
+
+Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to start GDB server
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1911)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-01-20 14:06:31.280
+!MESSAGE Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1911)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.toolchain 4 0 2025-01-20 14:06:31.280
+!MESSAGE Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:06:47.345
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:06:47.345
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:06:47.345
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:06:47.356
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:06:47.456
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:06:47.456
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:06:47.456
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:06:47.462
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:12:58.820
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:12:58.820
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:12:58.820
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:12:58.830
+!MESSAGE Project is null

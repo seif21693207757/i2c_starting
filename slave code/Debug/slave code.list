@@ -1,5 +1,5 @@
 
-wb_code_i2c.elf:     file format elf32-littlearm
+slave code.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -35,13 +35,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_line   000132c2  00000000  00000000  0003ee89  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_str    000d9433  00000000  00000000  0005214b  2**0
+ 16 .debug_str    000d9439  00000000  00000000  0005214b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .comment      00000043  00000000  00000000  0012b57e  2**0
+ 17 .comment      00000043  00000000  00000000  0012b584  2**0
                   CONTENTS, READONLY
- 18 .debug_frame  0000569c  00000000  00000000  0012b5c4  2**2
+ 18 .debug_frame  0000569c  00000000  00000000  0012b5c8  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_line_str 00000064  00000000  00000000  00130c60  2**0
+ 19 .debug_line_str 0000006a  00000000  00000000  00130c64  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
