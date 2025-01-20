@@ -1460,3 +1460,23 @@ Reason: (0) Unknown. Please check power and cabling to target.
 
 !ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:12:58.830
 !MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:32:31.933
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:32:31.933
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:32:31.933
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:32:31.948
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2025-01-20 14:32:32.062
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-01-20 14:32:32.062
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-01-20 14:32:32.062
+!MESSAGE C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod overlaps the location of another project: 'master cod'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-01-20 14:32:32.062
+!MESSAGE Project is null
