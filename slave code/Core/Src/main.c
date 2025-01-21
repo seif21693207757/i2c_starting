@@ -1,3 +1,4 @@
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -26,10 +27,14 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
- uint8_t received_data = 0;
-  uint8_t response_data = 0;
-/* USER CODE END PTD */
 
+  volatile uint8_t hmid = 0;
+  volatile uint8_t satour = 2;
+  volatile uint8_t a = 0;
+  volatile uint8_t b = 2;
+/* USER CODE END PTD */
+uint8_t received_data = 0;
+  uint8_t response_data = 0;
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
@@ -130,8 +135,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  	  	 HAL_I2C_Slave_Receive(&hi2c1, &received_data, 1, HAL_MAX_DELAY);
 
+
+	  	  	 HAL_I2C_Slave_Receive(&hi2c1, &received_data, 1, HAL_MAX_DELAY);
+	  	  	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET); // Mettre SCL (PB6) à LOW
+	              HAL_Delay(5000); // Attendre 1 seconde
+	              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET); // Relâcher SCL (PB6)
 	         // Incrémenter la donnée reçue
 	         response_data = received_data + 1;
 

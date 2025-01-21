@@ -21,6 +21,8 @@
   uint8_t i2c_address = 0x13;  // Adresse I2C de l'esclave
   	  uint8_t data_to_send = 0x05;  /* Infinite loop */
       uint8_t received_data = 0;
+      uint8_t request = 0; // Requête vide (juste pour déclencher la communication)
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 uint8_t pData=2;
@@ -129,11 +131,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      HAL_I2C_Master_Transmit(&hi2c1, i2c_address << 1, &data_to_send, 1, HAL_MAX_DELAY);
 
-      HAL_I2C_Master_Receive(&hi2c1, i2c_address << 1, &received_data, 1, HAL_MAX_DELAY);
 
-	  HAL_Delay(4000);
+     HAL_I2C_Master_Transmit(&hi2c1, i2c_address << 1, &data_to_send, 1, HAL_MAX_DELAY);
+
+     HAL_I2C_Master_Receive(&hi2c1, i2c_address << 1, &received_data, 1, HAL_MAX_DELAY);
+
+	  HAL_Delay(50);
 	  data_to_send = received_data;
   }
   /* USER CODE END 3 */

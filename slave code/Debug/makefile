@@ -53,6 +53,21 @@ default.size.stdout \
 OBJDUMP_LIST += \
 slave\ code.list \
 
+OBJCOPY_HEX += \
+slave\ code.hex \
+
+OBJCOPY_BIN += \
+slave\ code.bin \
+
+OBJCOPY_VERILOG += \
+slave\ code.verilog \
+
+OBJCOPY_SREC += \
+slave\ code.srec \
+
+OBJCOPY_SYMBOLSREC += \
+slave\ code.symbolsrec \
+
 
 # All Target
 all: main-build
@@ -76,12 +91,37 @@ slave\ code.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+slave\ code.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "slave code.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+slave\ code.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "slave code.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+slave\ code.verilog: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O verilog $(EXECUTABLES) "slave code.verilog"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+slave\ code.srec: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O srec $(EXECUTABLES) "slave code.srec"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+slave\ code.symbolsrec: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O symbolsrec $(EXECUTABLES) "slave code.symbolsrec"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) default.size.stdout slave\ code.elf slave\ code.list slave\ code.map slave\\ code.elf
+	-$(RM) default.size.stdout slave\ code.bin slave\ code.elf slave\ code.hex slave\ code.list slave\ code.map slave\ code.srec slave\ code.symbolsrec slave\ code.verilog slave\\ code.elf
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX) $(OBJCOPY_BIN) $(OBJCOPY_VERILOG) $(OBJCOPY_SREC) $(OBJCOPY_SYMBOLSREC)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

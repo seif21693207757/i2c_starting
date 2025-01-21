@@ -1,4 +1,163 @@
-14:12:58 **** Incremental Build of configuration Debug for project master cod ****
+10:47:39 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_BSP_COM_FEATURE=1 -DUSE_COM_LOG=1 -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:31,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Inc/stm32wbxx_nucleo_conf.h:52: warning: "USE_COM_LOG" redefined
+   52 | #define USE_COM_LOG                         1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Inc/stm32wbxx_nucleo_conf.h:53: warning: "USE_BSP_COM_FEATURE" redefined
+   53 | #define USE_BSP_COM_FEATURE                 1U
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "slave code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: slave code.elf
+ 
+arm-none-eabi-size  slave\ code.elf 
+arm-none-eabi-objdump -h -S slave\ code.elf  > "slave code.list"
+arm-none-eabi-objcopy  -O ihex slave\ code.elf  "slave code.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17864	     44	   1820	  19728	   4d10	slave code.elf
+arm-none-eabi-objcopy  -O binary slave\ code.elf  "slave code.bin"
+arm-none-eabi-objcopy  -O verilog slave\ code.elf  "slave code.verilog"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O srec slave\ code.elf  "slave code.srec"
+arm-none-eabi-objcopy  -O symbolsrec slave\ code.elf  "slave code.symbolsrec"
+ 
+Finished building: slave code.hex
+Finished building: slave code.list
+Finished building: slave code.bin
+Finished building: slave code.verilog
+Finished building: slave code.srec
+ 
+Finished building: slave code.symbolsrec
+ 
+ 
+ 
+ 
+ 
+10:47:44 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-size  slave\ code.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17864	     44	   1820	  19728	   4d10	slave code.elf
+Finished building: default.size.stdout
+ 
+10:48:25 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_BSP_COM_FEATURE=1 -DUSE_COM_LOG=1 -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:31,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Inc/stm32wbxx_nucleo_conf.h:52: warning: "USE_COM_LOG" redefined
+   52 | #define USE_COM_LOG                         1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Inc/stm32wbxx_nucleo_conf.h:53: warning: "USE_BSP_COM_FEATURE" redefined
+   53 | #define USE_BSP_COM_FEATURE                 1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:45: warning: passing argument 2 of 'HAL_I2C_Slave_Receive' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  139 |           if (HAL_I2C_Slave_Receive(&hi2c1, &received_data, 1, HAL_MAX_DELAY) != HAL_OK) {
+      |                                             ^~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:244,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:632:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
+  632 | HAL_StatusTypeDef HAL_I2C_Slave_Receive(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:144:62: warning: passing argument 2 of 'HAL_I2C_Slave_Transmit' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  144 |                           if (HAL_I2C_Slave_Transmit(&hi2c1, &b, 1, HAL_MAX_DELAY) != HAL_OK) {
+      |                                                              ^~
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:630:76: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
+  630 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                   ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "slave code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: slave code.elf
+ 
+arm-none-eabi-size  slave\ code.elf 
+arm-none-eabi-objdump -h -S slave\ code.elf  > "slave code.list"
+arm-none-eabi-objcopy  -O ihex slave\ code.elf  "slave code.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17852	     44	   1820	  19716	   4d04	slave code.elf
+arm-none-eabi-objcopy  -O binary slave\ code.elf  "slave code.bin"
+arm-none-eabi-objcopy  -O verilog slave\ code.elf  "slave code.verilog"
+arm-none-eabi-objcopy  -O srec slave\ code.elf  "slave code.srec"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O symbolsrec slave\ code.elf  "slave code.symbolsrec"
+ 
+Finished building: slave code.list
+Finished building: slave code.hex
+Finished building: slave code.verilog
+Finished building: slave code.srec
+Finished building: slave code.bin
+Finished building: slave code.symbolsrec
+ 
+ 
+ 
+ 
+ 
+ 
+11:48:05 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_BSP_COM_FEATURE=1 -DUSE_COM_LOG=1 -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:31,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Inc/stm32wbxx_nucleo_conf.h:52: warning: "USE_COM_LOG" redefined
+   52 | #define USE_COM_LOG                         1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Inc/stm32wbxx_nucleo_conf.h:53: warning: "USE_BSP_COM_FEATURE" redefined
+   53 | #define USE_BSP_COM_FEATURE                 1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:140:56: warning: passing argument 2 of 'HAL_I2C_Slave_Receive' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  140 |                          HAL_I2C_Slave_Receive(&hi2c1, &received_data, 1, HAL_MAX_DELAY);
+      |                                                        ^~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:244,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:632:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
+  632 | HAL_StatusTypeDef HAL_I2C_Slave_Receive(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:146:49: warning: passing argument 2 of 'HAL_I2C_Slave_Transmit' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  146 |                  HAL_I2C_Slave_Transmit(&hi2c1, &response_data, 1, HAL_MAX_DELAY);
+      |                                                 ^~~~~~~~~~~~~~
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_i2c.h:630:76: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
+  630 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                   ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "slave code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: slave code.elf
+ 
+arm-none-eabi-size  slave\ code.elf 
+arm-none-eabi-objdump -h -S slave\ code.elf  > "slave code.list"
+arm-none-eabi-objcopy  -O ihex slave\ code.elf  "slave code.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17836	     40	   1824	  19700	   4cf4	slave code.elf
+arm-none-eabi-objcopy  -O binary slave\ code.elf  "slave code.bin"
+arm-none-eabi-objcopy  -O verilog slave\ code.elf  "slave code.verilog"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O srec slave\ code.elf  "slave code.srec"
+arm-none-eabi-objcopy  -O symbolsrec slave\ code.elf  "slave code.symbolsrec"
+ 
+Finished building: slave code.list
+ 
+Finished building: slave code.hex
+Finished building: slave code.bin
+Finished building: slave code.verilog
+Finished building: slave code.srec
+Finished building: slave code.symbolsrec
+ 
+ 
+ 
+ 
+ 
+11:48:22 **** Incremental Build of configuration Debug for project master cod ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32G4xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "master cod.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="master cod.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -12,7 +171,47 @@ Finished building: default.size.stdout
  
 Finished building: master cod.list
  
-14:32:32 **** Incremental Build of configuration Debug for project master cod ****
+11:49:37 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_BSP_COM_FEATURE=1 -DUSE_COM_LOG=1 -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:31,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Inc/stm32wbxx_nucleo_conf.h:52: warning: "USE_COM_LOG" redefined
+   52 | #define USE_COM_LOG                         1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Inc/stm32wbxx_nucleo_conf.h:53: warning: "USE_BSP_COM_FEATURE" redefined
+   53 | #define USE_BSP_COM_FEATURE                 1U
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "slave code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: slave code.elf
+ 
+arm-none-eabi-size  slave\ code.elf 
+arm-none-eabi-objdump -h -S slave\ code.elf  > "slave code.list"
+arm-none-eabi-objcopy  -O ihex slave\ code.elf  "slave code.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17832	     40	   1824	  19696	   4cf0	slave code.elf
+arm-none-eabi-objcopy  -O binary slave\ code.elf  "slave code.bin"
+arm-none-eabi-objcopy  -O verilog slave\ code.elf  "slave code.verilog"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O srec slave\ code.elf  "slave code.srec"
+ 
+arm-none-eabi-objcopy  -O symbolsrec slave\ code.elf  "slave code.symbolsrec"
+Finished building: slave code.hex
+Finished building: slave code.list
+ 
+ 
+Finished building: slave code.verilog
+Finished building: slave code.bin
+ 
+ 
+Finished building: slave code.symbolsrec
+ 
+Finished building: slave code.srec
+ 
+11:52:07 **** Incremental Build of configuration Debug for project master cod ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32G4xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "master cod.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="master cod.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -22,6 +221,114 @@ arm-none-eabi-size  master\ cod.elf
 arm-none-eabi-objdump -h -S master\ cod.elf  > "master cod.list"
    text	   data	    bss	    dec	    hex	filename
   15180	     36	   1916	  17132	   42ec	master cod.elf
+Finished building: default.size.stdout
+ 
+Finished building: master cod.list
+ 
+11:53:16 **** Incremental Build of configuration Debug for project master cod ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32G4xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "master cod.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="master cod.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: master cod.elf
+ 
+arm-none-eabi-size  master\ cod.elf 
+arm-none-eabi-objdump -h -S master\ cod.elf  > "master cod.list"
+   text	   data	    bss	    dec	    hex	filename
+  15176	     36	   1916	  17128	   42e8	master cod.elf
+Finished building: default.size.stdout
+ 
+Finished building: master cod.list
+ 
+11:54:36 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_BSP_COM_FEATURE=1 -DUSE_COM_LOG=1 -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:31,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Inc/stm32wbxx_nucleo_conf.h:52: warning: "USE_COM_LOG" redefined
+   52 | #define USE_COM_LOG                         1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Inc/stm32wbxx_nucleo_conf.h:53: warning: "USE_BSP_COM_FEATURE" redefined
+   53 | #define USE_BSP_COM_FEATURE                 1U
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "slave code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: slave code.elf
+ 
+arm-none-eabi-size  slave\ code.elf 
+arm-none-eabi-objdump -h -S slave\ code.elf  > "slave code.list"
+arm-none-eabi-objcopy  -O ihex slave\ code.elf  "slave code.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17868	     40	   1824	  19732	   4d14	slave code.elf
+arm-none-eabi-objcopy  -O binary slave\ code.elf  "slave code.bin"
+arm-none-eabi-objcopy  -O verilog slave\ code.elf  "slave code.verilog"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O srec slave\ code.elf  "slave code.srec"
+ 
+Finished building: slave code.hex
+Finished building: slave code.list
+arm-none-eabi-objcopy  -O symbolsrec slave\ code.elf  "slave code.symbolsrec"
+ 
+Finished building: slave code.bin
+Finished building: slave code.verilog
+ 
+ 
+Finished building: slave code.srec
+ 
+ 
+Finished building: slave code.symbolsrec
+ 
+11:55:12 **** Incremental Build of configuration Debug for project slave code ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_BSP_COM_FEATURE=1 -DUSE_COM_LOG=1 -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/P-NUCLEO-WB55.Nucleo/stm32wbxx_nucleo.h:31,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Inc/stm32wbxx_nucleo_conf.h:52: warning: "USE_COM_LOG" redefined
+   52 | #define USE_COM_LOG                         1U
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Inc/stm32wbxx_nucleo_conf.h:53: warning: "USE_BSP_COM_FEATURE" redefined
+   53 | #define USE_BSP_COM_FEATURE                 1U
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "slave code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\slave code\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="slave code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: slave code.elf
+ 
+arm-none-eabi-size  slave\ code.elf 
+arm-none-eabi-objdump -h -S slave\ code.elf  > "slave code.list"
+arm-none-eabi-objcopy  -O ihex slave\ code.elf  "slave code.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17868	     40	   1824	  19732	   4d14	slave code.elf
+arm-none-eabi-objcopy  -O binary slave\ code.elf  "slave code.bin"
+arm-none-eabi-objcopy  -O verilog slave\ code.elf  "slave code.verilog"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O srec slave\ code.elf  "slave code.srec"
+arm-none-eabi-objcopy  -O symbolsrec slave\ code.elf  "slave code.symbolsrec"
+ 
+Finished building: slave code.hex
+Finished building: slave code.srec
+Finished building: slave code.verilog
+ 
+ 
+Finished building: slave code.bin
+Finished building: slave code.list
+Finished building: slave code.symbolsrec
+ 
+ 
+ 
+ 
+12:01:14 **** Incremental Build of configuration Debug for project master cod ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32G4xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "master cod.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\seljery.ACTIA\Desktop\code stm32\EX_I2C\master cod\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="master cod.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: master cod.elf
+ 
+arm-none-eabi-size  master\ cod.elf 
+arm-none-eabi-objdump -h -S master\ cod.elf  > "master cod.list"
+   text	   data	    bss	    dec	    hex	filename
+  15176	     36	   1916	  17128	   42e8	master cod.elf
 Finished building: default.size.stdout
  
 Finished building: master cod.list
